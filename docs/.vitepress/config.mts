@@ -10,7 +10,6 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     // logo: './chodocs-logo.svg',
     // outline: 'deep',
-    lastUpdated: true,
     // 移动端配置
     returnToTopLabel: '返回顶部',
     outlineTitle: '导航栏',
