@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { github } from './meta'
+import { sidebarDefult } from './sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -9,6 +10,12 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     // logo: './chodocs-logo.svg',
     // outline: 'deep',
+    lastUpdated: true,
+    // 移动端配置
+    returnToTopLabel: '返回顶部',
+    outlineTitle: '导航栏',
+    darkModeSwitchLabel: '主题',
+    sidebarMenuLabel: '菜单',
 
     search: {
       provider: 'local',
@@ -34,20 +41,31 @@ export default defineConfig({
       }
     },
 
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇',
+    },
+
+    outline: {
+      label: '页面导航'
+    },
+
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'medium'
+      }
+    },
+
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar: {
+      '/guide/': { base: '/guide/', items: sidebarDefult() },
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/1peak-c/blog' }

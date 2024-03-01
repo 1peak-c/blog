@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 开启旅程
-      link: /markdown-examples
+      link: /guide/start
     - theme: alt
       text: vitepress官网
       link: https://vitepress.dev

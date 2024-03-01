@@ -19,10 +19,9 @@
 
 
   /* 鼠标悬停的效果之后的样式 */
-  --vp-button-brand-hover-border: #00FFEE;
+  /* --vp-button-brand-hover-border: #00FFEE; */
   --vp-button-brand-hover-text: #000000;
-  --vp-button-brand-hover-bg: #00FFEE;
-
+  /* --vp-button-brand-hover-bg: #00FFEE; */
   --vp-button-brand-active-border: #ff7500;
 
   /* 主题基色 */
