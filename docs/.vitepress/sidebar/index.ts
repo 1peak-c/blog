@@ -10,3 +10,22 @@ export function sidebarDefult(): DefaultTheme.SidebarItem[]  {
     }
   ]
 }
+
+export function sidebarProgramLearning(): DefaultTheme.SidebarItem[]  {
+  return [
+    {
+      text: '原子化css',
+      collapsed: false,
+      items: [
+        {text: 'tailwindcss', link: '/tailwindcss'}
+      ]
+    },
+    {
+      text: 'webpack',
+      collapsed: false,
+      items: [
+        {text: 'css Tree Shaking', link: '/webpack/purgeCssPlugin'}
+      ]
+    }
+  ]
+}

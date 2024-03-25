@@ -20,6 +20,7 @@ hero:
 features:
   - icon: ⚡️
     title: 编程学习
+    link: /programLearning/tailwindcss
     details: HTML CSS JavaScript TypeScript Vue3 react等部分的基础以及进阶的内容知识点,整合自己以及别人的资料
   - icon: 🖖
     title: 数据结构与算法
