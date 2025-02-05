@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { github } from './meta'
-import { sidebarDefult, sidebarProgramLearning } from './sidebar'
+import { sidebarDefult, sidebarProgramLearning, sidebarJavaLearning } from './sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -65,6 +65,7 @@ export default defineConfig({
     sidebar: {
       '/guide/': { base: '/guide/', items: sidebarDefult() },
       '/programLearning/': { base: '/programLearning/', items: sidebarProgramLearning() },
+      '/java/': { base: '/java/', items: sidebarJavaLearning() },
     },
 
     socialLinks: [

@@ -29,3 +29,15 @@ export function sidebarProgramLearning(): DefaultTheme.SidebarItem[]  {
     }
   ]
 }
+
+export function sidebarJavaLearning() {
+  return [
+    {
+      text: 'java base',
+      collapsed: false,
+      items: [
+        {text: '线程', link: '/base/thread'}
+      ]
+    }
+  ]
+}
